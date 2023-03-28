@@ -2,6 +2,7 @@ import './App.css';
 import UseStateGame from './reactHooksGame/UseStateGame';
 import MenuNav from './menus/MenuNav';
 import GameSkill from './gameSkill/GameSkill';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
       <main id="game-body">
         <MenuNav />
         <div className='game-playroom'>
-          <UseStateGame />
+          <Routes>
+            <Route path="/react-hooks/useState" element={<UseStateGame />} />
+          </Routes>
         </div>
         <div className='game-skill'>
           <GameSkill />

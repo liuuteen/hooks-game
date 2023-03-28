@@ -1,11 +1,10 @@
-import {useState} from 'react';
-export default function MenuLvTwo({lv2Menus}) {
-	const [selectedIndex, setSelectedIndex] = useState();
+import { NavLink } from 'react-router-dom';
+export default function MenuLvTwo({parentUrlPath, menus}) {
 	return (
 		<ul className="game-nav-lv2">
-			{lv2Menus.map((menu,i) => (
-				<li key={i} className={selectedIndex === i ? "selected" : null} onClick={() => setSelectedIndex(i)}>
-					{menu}
+			{menus.map(menu => (
+				<li key={menu.id}>
+					<NavLink to={`/${parentUrlPath}/${menu.urlPath}`}>{menu.title}</NavLink>
 				</li>
 			))}
 		</ul>
