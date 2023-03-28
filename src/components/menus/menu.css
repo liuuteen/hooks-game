@@ -1,0 +1,13 @@
+.game-nav .game-nav-lv1 {
+  padding: 1rem 2rem;
+  list-style: none;
+  background-image:linear-gradient(0deg,#fff1eb 0%, #ace0f9 100%);
+  /* border: 1px solid #46aef7; */
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.game-nav .game-nav-lv1:hover {
+  background-image: linear-gradient(0deg,#16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+  cursor: pointer;
+}
