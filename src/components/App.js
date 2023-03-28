@@ -1,6 +1,7 @@
 import './App.css';
-import UseStateGame from './react-hooks-game/UseStateGame';
-import MenuLvOne from './menus/MenuLvOne';
+import UseStateGame from './reactHooksGame/UseStateGame';
+import MenuNav from './menus/MenuNav';
+import GameSkill from './gameSkill/GameSkill';
 
 function App() {
   return (
@@ -14,15 +15,12 @@ function App() {
         </div>
       </header>
       <main id="game-body">
-        <div className='game-nav'>
-          <MenuLvOne lv1Title={"react hooks"} />
-          <MenuLvOne lv1Title={"react-router hooks"} />
-        </div>
+        <MenuNav />
         <div className='game-playroom'>
           <UseStateGame />
         </div>
         <div className='game-skill'>
-          rightside
+          <GameSkill />
         </div>
       </main>
     </div>

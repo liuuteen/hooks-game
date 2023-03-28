@@ -1,7 +1,6 @@
-.game {
-  padding: 0 3rem;
+html{
+  background-color: rgba(252, 203, 218, 0.1);
 }
-
 #game-header {
   font-size: 4rem;
   height: 100px;
@@ -17,16 +16,20 @@
 
 #game-body {
   display: flex;
-  border: 1px solid;
 }
 
 /* left nav bar */
-#game-body > div {
+/* #game-body > div {
   border: 1px solid greenyellow;
-}
+} */
 
 .game-nav {
+  position: sticky;
   padding: 1rem;
+}
+
+.menu-lv1-container {
+  margin-bottom: 0.5rem;
 }
 
 /* middle playroom */
@@ -38,10 +41,18 @@
 /* right skill */
 .game-skill {
   padding: 2rem;
-  width: 400px;
+  width: 300px;
 }
 
 /* game icons */
 .game-icon-lv1 {
   padding-left: 1rem;
+}
+
+/* skill-border */
+.skill-intro {
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  background-color: #ff7eb3;
 }

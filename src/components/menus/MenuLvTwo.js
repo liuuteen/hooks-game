@@ -1,7 +1,13 @@
-export default function MenuLvTwo() {
+import {useState} from 'react';
+export default function MenuLvTwo({lv2Menus}) {
+	const [selectedIndex, setSelectedIndex] = useState();
 	return (
 		<ul className="game-nav-lv2">
-			<li>useState</li>
+			{lv2Menus.map((menu,i) => (
+				<li key={i} className={selectedIndex === i ? "selected" : null} onClick={() => setSelectedIndex(i)}>
+					{menu}
+				</li>
+			))}
 		</ul>
 	)
 }
